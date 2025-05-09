@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 
@@ -101,7 +102,7 @@ class SalaryComparator implements Comparator<ComparableEmployers>{
 	
 }
 class ExperienceComparator implements Comparator<ComparableEmployers>{
-	public int compare(ComparableEmployers o1, ComparableEmployers o2)|{
+	public int compare(ComparableEmployers o1, ComparableEmployers o2){
 		return Integer.compare(o1.getExperience(), o2.getExperience());
 	}
 }
