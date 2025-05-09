@@ -172,10 +172,11 @@ public class Analyzer {
     		ComparableEmployers employer = iterator.next();
     		if(employer.getSurname().equals(surname) && employer.getName().equals(name)) {
     		iterator.remove();	
-    			
-    			
     		}
     	}
     	
+    }
+    public ArrayList<ComparableEmployers> getTable(){
+		return table;
     }
 }

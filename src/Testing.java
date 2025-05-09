@@ -14,6 +14,10 @@ public class Testing {
 		System.out.println("\n\n\n");
 		analyze.filterBySex("M");
 		analyze.printTable();
+		System.out.println("\n\n\n");
+		analyze.delete("Grzegorz", "Piotrowski");
+		analyze.printTable();
+		
 	}
 
 }
