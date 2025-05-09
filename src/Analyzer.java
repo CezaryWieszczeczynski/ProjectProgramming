@@ -166,9 +166,16 @@ public class Analyzer {
             }
         }
     }
-    /*public void delete(String Surname) {
-    	Iterator iterator = table.iterator();
-    	While(iterator.hasNext())
+    public void delete(String name, String surname) {
+    	Iterator<ComparableEmployers> iterator = table.iterator();
+    	while(iterator.hasNext()) {
+    		ComparableEmployers employer = iterator.next();
+    		if(employer.getSurname().equals(surname) && employer.getName().equals(name)) {
+    		iterator.remove();	
+    			
+    			
+    		}
+    	}
     	
-    }*/
+    }
 }
