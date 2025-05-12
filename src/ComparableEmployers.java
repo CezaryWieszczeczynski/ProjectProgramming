@@ -13,12 +13,13 @@ public class ComparableEmployers {
 		private Integer Experience;
 		
 	public ComparableEmployers(String name, String surname, Integer age, String date, String sex, Double salary) {
-		this.setName(name);
+		this.setName(name);  
 		this.setSurname(surname);
 		this.setAge(age);
 		this.setDate(date);
 		this.setSex(sex);
 		this.setSalary(salary);
+		this.setExperience();
 		
 	}
 	public Integer getExperience() {

@@ -48,27 +48,27 @@ public class Analyzer {
         Iterator<ComparableEmployers> iterator = table.iterator();
         while (iterator.hasNext()) {
             ComparableEmployers employer = iterator.next();
-            boolean remove = false;
+            boolean keep = false;
             switch (option) {
                 case 1: 
-                    remove = employer.getSalary() != salary;
+                    keep = employer.getSalary() == salary;
                     break;
                 case 2: 
-                    remove = employer.getSalary() >= salary;
+                    keep = employer.getSalary() >= salary;
                     break;
                 case 3: 
-                    remove = employer.getSalary() <= salary;
+                    keep = employer.getSalary() <= salary;
                     break;
                 case 4:
-                    remove = employer.getSalary() > salary;
+                    keep = employer.getSalary() > salary;
                     break;
                 case 5: 
-                    remove = employer.getSalary() < salary;
+                    keep = employer.getSalary() < salary;
                     break;
                 default:
                     return; 
             }
-            if (remove) {
+            if (!keep) {
                 iterator.remove();
             }
         }
@@ -78,27 +78,27 @@ public class Analyzer {
         Iterator<ComparableEmployers> iterator = table.iterator();
         while (iterator.hasNext()) {
             ComparableEmployers employer = iterator.next();
-            boolean remove = false;
+            boolean keep = false;
             switch (option) {
                 case 1: 
-                    remove = employer.getExperience() != experience;
+                    keep = employer.getExperience() == experience;
                     break;
                 case 2: 
-                    remove = employer.getExperience() >= experience;
+                    keep = employer.getExperience() >= experience;
                     break;
                 case 3: 
-                    remove = employer.getExperience() <= experience;
+                    keep = employer.getExperience() <= experience;
                     break;
                 case 4: 
-                    remove = employer.getExperience() > experience;
+                    keep = employer.getExperience() > experience;
                     break;
                 case 5: 
-                    remove = employer.getExperience() < experience;
+                    keep = employer.getExperience() < experience;
                     break;
                 default:
                     return; 
             }
-            if (remove) {
+            if (!keep) {
                 iterator.remove();
             }
         }
@@ -141,27 +141,27 @@ public class Analyzer {
         Iterator<ComparableEmployers> iterator = table.iterator();
         while (iterator.hasNext()) {
             ComparableEmployers employer = iterator.next();
-            boolean remove = false;
+            boolean keep;
             switch (option) {
                 case 1: 
-                    remove = employer.getAge() != age;
+                    keep = employer.getAge() == age;
                     break;
                 case 2: 
-                    remove = employer.getAge() >= age;
+                    keep = employer.getAge() >= age;
                     break;
                 case 3: 
-                    remove = employer.getAge() <= age;
+                    keep = employer.getAge() <= age;
                     break;
                 case 4: 
-                    remove = employer.getAge() > age;
+                    keep = employer.getAge() > age;
                     break;
                 case 5:
-                    remove = employer.getAge() < age;
+                    keep = employer.getAge() < age;
                     break;
                 default:
                     return; 
             }
-            if (remove) {
+            if (!keep) {
                 iterator.remove();
             }
         }
