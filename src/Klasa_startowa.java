@@ -1,9 +1,9 @@
-
-
 public class Klasa_startowa {
-	
-	public static void main(String[] args) {
-	long startTime = System.currentTimeMillis();
-	Interface.main_menu(startTime);	
-	}
+    // Punkt wejścia programu
+    public static void main(String[] args) {
+        // Pobiera czas rozpoczęcia programu w milisekundach
+        long startTime = System.currentTimeMillis();
+        // Wywołuje główne menu aplikacji, przekazując czas rozpoczęcia
+        Interface.main_menu(startTime);    
+    }
 }
