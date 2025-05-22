@@ -364,6 +364,7 @@ public class Interface {
                 while(true) {
                 System.out.println("Wiek: ");	
                 String age1 = fred.nextLine();
+                //sprawdza, czy wiek został podany w poprawnym formacie
                 try {
                 	age = Integer.parseInt(age1);
                 	break;
@@ -376,7 +377,7 @@ public class Interface {
                 while(true) {
                 System.out.println("Data zatrudnienia format (DD.MM.YYYY): ");
                 emp = fred.nextLine();
-                
+              //sprawdza, czy data została podana w poprawnym formacie
                 if(Handyones.isValidDateFormat(emp)) {
                 	break;
                 	}else {
@@ -387,6 +388,7 @@ public class Interface {
                  
                 String sex;
                 System.out.println("Podaj płeć pracownika (K/M): ");
+              //sprawdza, czy płeć została podana w poprawnym formacie
                 while(true) {
                 
                 sex = fred.nextLine();
@@ -401,6 +403,7 @@ public class Interface {
                 while(true) {
                 System.out.println("Wynagrodzenie: ");
                 String salary1 = fred.nextLine();
+              //sprawdza, czy wynagrodzenie zostało podane w poprawnym formacie
                 try {
                 	salary = Double.parseDouble(salary1);
                 	break;
