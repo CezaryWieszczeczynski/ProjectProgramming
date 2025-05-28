@@ -28,8 +28,11 @@ public class Analyzer {
 
     // Wyświetla listę pracowników w formacie tabelarycznym
     public void printTable() {
+    	System.out.printf("%-15s %-15s %-5s %-14s %-3s %-12s %-14s%n",
+                "Imię", "Nazwisko", "Wiek", "Data", "Płeć", "Wynagrodzenie", "Doświadczenie");// dodaje nagłówki
+        System.out.println("-".repeat(80)); // Linia oddzielająca nagłówki od danych
         for (ComparableEmployers employer : table) {
-            System.out.printf("%-15s %-15s %-5d %-15s %-5s %-10.2f %-10d%n",
+        	System.out.printf("%-15s %-15s %-5d %-15s %-3s %-13.2f %-14d%n",
                     employer.getName(),
                     employer.getSurname(),
                     employer.getAge(),

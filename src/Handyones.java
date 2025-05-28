@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -84,5 +86,18 @@ public class Handyones {
         } catch (ParseException e) {
             return false;
         }
+    }
+    public static void getFilePath() throws IOException{
+    	System.out.println("Podaj ścieżkę z której odczytujesz plik");
+    	String fileName1 = franek.nextLine();
+    	File file = new File(fileName1);
+    	if(!file.exists()) {
+    		throw new IOException();
+    	}else {
+    		Interface.wczytywanie.fileName = fileName1;
+    	}
+    	
+    	
+    	
     }
 }

@@ -9,7 +9,7 @@ public class Interface {
     // Wewnętrzna klasa do wczytywania i przechowywania danych pracowników
     public static class wczytywanie {
         // Ścieżka do pliku z danymi pracowników
-        private static String fileName = "C:\\Users\\wiesz\\OneDrive\\Dokumenty\\inputData.txt";
+        static String fileName = "C:\\Users\\wiesz\\eclipse-workspace\\ProjectProgramming\\src\\inputData.txt";
         // Obiekt Table do wczytywania danych z pliku
         private static Table listaP = new Table(fileName);
         // Lista pracowników wczytanych z pliku
